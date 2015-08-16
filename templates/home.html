@@ -2,10 +2,18 @@
   <div class="container">
     <h1>kubscouts</h1>
 
-    {{> loginButtons}}
-    <br><br><br><br>
-    {{> messages}}
-    {{> input}}
+    <div class="col-md-6">
+      {{> loginButtons}}
+      <br><br><br><br>
+      {{> messages}}
+      {{> input}}
+    </div>
+
+    <div class="col-md-6">
+      {{#each list_users}}
+      hi
+      {{/each}}
+    </div>
 
   </div>
 </template>
