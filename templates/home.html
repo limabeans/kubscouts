@@ -1,12 +1,10 @@
 <template name="home">
-  <div class="row">
-    <div class="large-12 columns">
-      <h1>kubscouts</h1>
-    </div>
+  <div class="container">
+    <h1>kubscouts</h1>
+    <ul>
+      {{#each some_list}}
+      <li>{{type}}</li>
+      {{/each}}
+    </ul>
   </div>
-  <ul>
-    {{#each some_list}}
-    <li>{{type}}</li>
-    {{/each}}
-  </ul>
 </template>
