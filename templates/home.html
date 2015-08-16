@@ -1,10 +1,11 @@
 <template name="home">
   <div class="container">
     <h1>kubscouts</h1>
-    <ul>
-      {{#each some_list}}
-      <li>{{type}}</li>
-      {{/each}}
-    </ul>
+
+    {{> loginButtons}}
+    <br><br><br><br>
+    {{> messages}}
+    {{> input}}
+
   </div>
 </template>
