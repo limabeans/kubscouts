@@ -2,17 +2,24 @@
   <div class="container">
     <h1>kubscouts</h1>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
       {{> loginButtons}}
-      <br><br><br><br>
+      <h1>some chat room in the meantime</h1>
       {{> messages}}
       {{> input}}
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
+      <h1>the main room will go here</h1>
+    </div>
+
+    <div class="col-md-4">
+      <h1>List of registered people on kubscouts</h1>
+      <ul>
       {{#each list_users}}
-      hi
+        <li>{{this}}</li>
       {{/each}}
+      </ul>
     </div>
 
   </div>
