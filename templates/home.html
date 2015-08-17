@@ -14,13 +14,23 @@
     </div>
 
     <div class="col-md-4">
+
       <h1>List of registered people on kubscouts</h1>
       <ul>
       {{#each list_users}}
         <li>{{this}}</li>
       {{/each}}
       </ul>
+
+      <h1>List of online ppl on kubscouts</h1>
+      <ul>
+      {{#each list_online_users}}
+        <li>{{this}}</li>
+      {{/each}}
+      </ul>
+
     </div>
+
 
   </div>
 </template>
