@@ -13,3 +13,7 @@ Router.route('/', {
 Router.route('/rooms', function() {
   this.render('rooms');
 });
+
+Router.route('/main_room', function() {
+  this.render('main_room');
+});

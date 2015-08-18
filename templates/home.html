@@ -1,36 +1,14 @@
 <template name="home">
-  <div class="container">
-    <h1>kubscouts</h1>
+  {{> nav}}
 
-    <div class="col-md-4">
-      {{> loginButtons}}
-      <h1>some chat room in the meantime</h1>
-      {{> messages}}
-      {{> input}}
+  <div class="container below-nav">
+    <div class="col-md-6">
+      <h1>real-time online cubing</h1>
     </div>
 
-    <div class="col-md-4">
-      <h1>the main room will go here</h1>
+    <div class="col-md-6">
+      {{> signup}}
     </div>
-
-    <div class="col-md-4">
-
-      <h1>List of registered people on kubscouts</h1>
-      <ul>
-      {{#each list_users}}
-        <li>{{this}}</li>
-      {{/each}}
-      </ul>
-
-      <h1>List of online ppl on kubscouts</h1>
-      <ul>
-      {{#each list_online_users}}
-        <li>{{this}}</li>
-      {{/each}}
-      </ul>
-
-    </div>
-
 
   </div>
 </template>

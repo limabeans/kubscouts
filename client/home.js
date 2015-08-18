@@ -16,3 +16,9 @@ Template.home.helpers({
 
   }
 });
+
+Template.home.events({
+  'click #to_main_room': function() {
+    Router.go('/main_room');
+  }
+});

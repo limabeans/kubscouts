@@ -9,6 +9,10 @@ iron:router
 jquery
 accounts-ui
 accounts-password
-mizzao:user-status
 mike:mocha
 coffeescript
+accounts-base
+aldeed:collection2
+aldeed:autoform
+aldeed:simple-schema
+mizzao:user-status
