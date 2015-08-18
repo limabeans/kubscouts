@@ -1,6 +1,6 @@
 Meteor.methods({
   addYolo: function() {
-    Rooms.insert({name: "yolo"});
+    Rooms.insert({name: "yoloooooo"});
   },
   send_message: function(name, msg) {
     Messages.insert({

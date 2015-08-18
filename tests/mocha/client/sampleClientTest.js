@@ -1,9 +1,19 @@
-if (!(typeof MochaWeb === 'undefined')){
-  MochaWeb.testOnly(function(){
-    describe("a group of tests", function(){
-      it("should respect equality", function(){
+if (!(typeof MochaWeb === 'undefined')) {
+
+  MochaWeb.testOnly(function() {
+    describe("testing the tests", function() {
+
+      it("5 === 5", function() {
         chai.assert.equal(5,5);
       });
+
+      it("4 !== 5", function() {
+        chai.assert.notEqual(4,5);
+      });
+
     });
   });
+
+
+
 }
