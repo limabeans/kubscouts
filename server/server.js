@@ -8,5 +8,8 @@ if (Meteor.isServer) {
   Meteor.publish("users", function() {
     return Meteor.users.find();
   });
+  Meteor.publish("kubscouts", function() {
+    return Kubscouts.find({});
+  });
 
 }

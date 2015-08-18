@@ -2,7 +2,9 @@ Router.route('/', {
   subscriptions: function() {
     return [Meteor.subscribe('rooms'), 
             Meteor.subscribe('messages'),
-            Meteor.subscribe('users')];
+            Meteor.subscribe('users'),
+            Meteor.subscribe('kubscouts')
+           ];
   },
   action: function() {
     this.render('home');

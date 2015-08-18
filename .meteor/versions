@@ -69,6 +69,7 @@ sanjo:meteor-version@1.0.0
 service-configuration@1.0.4
 session@1.1.0
 sha@1.0.3
+softwarerero:accounts-t9n@1.0.9
 spacebars@1.0.6
 spacebars-compiler@1.0.6
 srp@1.0.3
@@ -77,6 +78,8 @@ tracker@1.0.7
 ui@1.0.6
 underscore@1.0.3
 url@1.0.4
+useraccounts:bootstrap@1.12.2
+useraccounts:core@1.12.2
 velocity:chokidar@0.12.6_1
 velocity:core@0.6.1
 velocity:html-reporter@0.5.3
