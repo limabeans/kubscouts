@@ -1,5 +1,12 @@
-Router.route('/', function() {
-  this.render('home');
+Router.route('/', {
+  subscriptions: function() {
+    return [Meteor.subscribe('rooms'), 
+            Meteor.subscribe('messages'),
+            Meteor.subscribe('users')];
+  },
+  action: function() {
+    this.render('home');
+  }
 });
 
 
