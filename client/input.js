@@ -1,11 +1,11 @@
 Template.input.events = {
   'submit form': function(event) {
     event.preventDefault();
+    var name;
     if (Meteor.user()) {
-      var name = Meteor.user().emails[0].address;
-      console.log(name);
+      name = Meteor.user().emails[0].address;
     } else {
-      var name = 'anon';
+      name = 'anon';
     }
     
     if (message.value !== '') {
@@ -14,4 +14,4 @@ Template.input.events = {
       message.value = ''; 
     }
   }
-}
+};
