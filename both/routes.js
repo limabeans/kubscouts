@@ -5,7 +5,6 @@ Router.configure({
   yieldTemplates: {
     nav: {to: 'nav'}
   }
-
 });
 
 // apparently yieldTemplates won't work unless I use Router.map
@@ -21,8 +20,6 @@ Router.map(function() {
     }
   });
 });
-
-
 
 // sample data route w/ master_layout
 Router.map(function() {

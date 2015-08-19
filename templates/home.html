@@ -19,6 +19,13 @@
   <div class="col-md-6">      
     {{#if currentUser}} 
     <h1>Welcome, {{currentUser.username}}!</h1>
+    <button id="create-room">create room</button>
+    <h1> Your rooms</h1>
+    <ul>
+      {{#each my_rooms}}
+        <li>{{_id}}</li>
+      {{/each}}
+    </ul>
     {{else}}
       {{> atForm state="signUp"}}
     {{/if}}

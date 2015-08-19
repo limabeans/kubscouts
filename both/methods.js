@@ -8,5 +8,8 @@ Meteor.methods({
       message: msg,
       time: Date.now() 
     });
+  },
+  create_room: function(username) {
+    Rooms.insert({event: '3bld', createdBy: username});
   }
 });
