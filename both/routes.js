@@ -1,3 +1,5 @@
+// sets the default layout to master_layout
+// then injects the content into {{> yield}}
 Router.configure({
   layoutTemplate: 'master_layout',
   yieldTemplates: {
@@ -5,8 +7,6 @@ Router.configure({
   }
 
 });
-
-
 
 // apparently yieldTemplates won't work unless I use Router.map
 Router.map(function() {
@@ -22,6 +22,20 @@ Router.map(function() {
   });
 });
 
+
+
+// sample data route w/ master_layout
+Router.map(function() {
+  this.route('username', {
+    path: '/user/:_username',
+    data: function() {
+      return {username: this.params._username};
+    }
+  });
+});
+
+
+// these routes won't work with master_layout
 Router.route('/rooms', function() {
   this.render('rooms');
 });
@@ -31,6 +45,8 @@ Router.route('/main_room', function() {
 });
 
 
+
+// make sure login/logout/etc routes are configured
 AccountsTemplates.configureRoute('signIn');
 AccountsTemplates.configureRoute('changePwd');
 AccountsTemplates.configureRoute('enrollAccount');
