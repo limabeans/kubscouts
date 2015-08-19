@@ -7,6 +7,9 @@ Template.home.helpers({
   },
   list_online_users: function() {
     return Meteor.users.find({'status.online': true});
+  },
+  accounts_templates_get_state: function() {
+    return AccountsTemplates.getState();
   }
 });
 

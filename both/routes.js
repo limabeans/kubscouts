@@ -1,16 +1,26 @@
-Router.route('/', {
-  subscriptions: function() {
-    return [Meteor.subscribe('rooms'), 
-            Meteor.subscribe('messages'),
-            Meteor.subscribe('users'),
-            Meteor.subscribe('kubscouts')
-           ];
-  },
-  action: function() {
-    this.render('home');
+Router.configure({
+  layoutTemplate: 'master_layout',
+  yieldTemplates: {
+    nav: {to: 'nav'}
   }
+
 });
 
+
+
+// apparently yieldTemplates won't work unless I use Router.map
+Router.map(function() {
+  this.route('home', {
+    path: '/',
+    subscriptions: function() {
+      return [Meteor.subscribe('rooms'), 
+              Meteor.subscribe('messages'),
+              Meteor.subscribe('users'),
+              Meteor.subscribe('kubscouts')
+             ];
+    }
+  });
+});
 
 Router.route('/rooms', function() {
   this.render('rooms');
