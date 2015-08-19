@@ -10,8 +10,8 @@ Router.configure({
 
 // apparently yieldTemplates won't work unless I use Router.map
 Router.map(function() {
-  this.route('home', {
-    path: '/',
+  this.route('home', { // the 'home' template
+    path: '/', // the actual url
     subscriptions: function() {
       return [Meteor.subscribe('rooms'), 
               Meteor.subscribe('messages'),
