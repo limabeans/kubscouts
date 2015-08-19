@@ -3,7 +3,7 @@
   <ul>
     <li>convert this to a pretty table and make them linkable</li>
     {{#each list_public_rooms}}
-    <li><b>id:</b> {{_id}}  ||||<b>event:</b> {{event}} |||| <b>createdBy:</b>{{createdBy}}</li>
+    <li><a href="/room/{{_id}}"><b>id:</b> {{_id}}  ||||<b>event:</b> {{event}} |||| <b>createdBy:</b>{{createdBy}}</a></li>
     {{/each}}
   </ul>
 </template>
