@@ -31,6 +31,16 @@ Router.map(function() {
   });
 });
 
+Router.map(function() {
+  this.route('room', {
+    path: '/room',
+    subscriptions: function() {
+      return [Meteor.subscribe('rooms')
+      ];
+    }
+  });
+});
+
 
 // these routes won't work with master_layout
 Router.route('/rooms', function() {

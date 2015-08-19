@@ -5,6 +5,9 @@ Rooms.attachSchema( new SimpleSchema({
   },
   createdBy: {
     type: String
+  },
+  privateRoom: {
+    type: Boolean
   }
 }));
 

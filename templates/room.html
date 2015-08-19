@@ -1,0 +1,8 @@
+<template name="room">
+  <h1>Listing all public rooms</h1>
+  <ul>
+    {{#each list_public_rooms}}
+      <li><b>event:</b> {{event}} |||| <b>createdBy:</b>{{createdBy}}</li>
+    {{/each}}
+  </ul>
+</template>

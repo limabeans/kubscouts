@@ -10,6 +10,6 @@ Meteor.methods({
     });
   },
   create_room: function(username) {
-    Rooms.insert({event: '3bld', createdBy: username});
+    Rooms.insert({event: '3bld', createdBy: username, privateRoom: false});
   }
 });
