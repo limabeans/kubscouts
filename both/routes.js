@@ -31,6 +31,7 @@ Router.map(function() {
   });
 });
 
+
 Router.map(function() {
   this.route('individualRoom', {
     path: '/room/:_id',
