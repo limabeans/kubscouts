@@ -1,7 +1,5 @@
 Template.individualRoom.helpers({
-  get_user_results: function() {
-    var times = Times.find({roomId: this._id});
-    console.log(this._id);
-    return [{username: 'angel', time: 2323}];
+  get_times: function() {
+    return Times.find({roomId: this._id});
   }
 });

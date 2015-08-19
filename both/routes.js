@@ -36,7 +36,8 @@ Router.map(function() {
   this.route('individualRoom', {
     path: '/room/:_id',
     subscriptions: function() {
-      return [Meteor.subscribe('rooms')
+      return [Meteor.subscribe('rooms'),
+              Meteor.subscribe('times')
              ];
     },
     data: function() {

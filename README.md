@@ -9,3 +9,4 @@ you can see the packages we're using by running `meteor list`
 ### todo
 - figure out how to make signin button in nav not actually go to new pg
 - make Sign up button green or some color
+- stickers
