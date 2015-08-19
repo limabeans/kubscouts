@@ -10,7 +10,7 @@ Meteor.methods({
     });
   },
   create_room: function(username) {
-    Rooms.insert({event: '3bld', createdBy: username, privateRoom: false});
+    Rooms.insert({createdBy: username, privateRoom: false});
   },
   get_room_results: function(roomId) {
     return Times.find({roomId: roomId});

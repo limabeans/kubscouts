@@ -1,8 +1,7 @@
+
+// decided to not restrict a room to a particular event
 Rooms = new Mongo.Collection('rooms');
 Rooms.attachSchema( new SimpleSchema({
-  event: {
-    type: String
-  },
   createdBy: {
     type: String
   },
