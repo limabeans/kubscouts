@@ -21,6 +21,31 @@ Router.map(function() {
   });
 });
 
+Router.map(function() {
+  this.route('room', {
+    path: '/room',
+    subscriptions: function() {
+      return [Meteor.subscribe('rooms')
+             ];
+    }
+  });
+});
+
+Router.map(function() {
+  this.route('individualRoom', {
+    path: '/room/:_id',
+    subscriptions: function() {
+      return [Meteor.subscribe('rooms')
+             ];
+    },
+    data: function() {
+      var room = Rooms.findOne({_id: this.params._id});
+      return room;
+    }
+  });
+});
+
+
 // sample data route w/ master_layout
 Router.map(function() {
   this.route('username', {
@@ -31,15 +56,6 @@ Router.map(function() {
   });
 });
 
-Router.map(function() {
-  this.route('room', {
-    path: '/room',
-    subscriptions: function() {
-      return [Meteor.subscribe('rooms')
-      ];
-    }
-  });
-});
 
 
 // these routes won't work with master_layout

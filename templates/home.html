@@ -24,7 +24,7 @@
     <h1> Your rooms</h1>
     <ul>
       {{#each my_rooms}}
-        <li>{{_id}}</li>
+        <li><a href="/room/{{_id}}">{{_id}}</a></li>
       {{/each}}
     </ul>
     {{else}}
