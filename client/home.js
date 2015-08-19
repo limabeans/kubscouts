@@ -1,3 +1,4 @@
+
 Template.home.helpers({
   some_list: [
     {type: "cat"}, {type:"dog"}, {type:"carrot"}
@@ -22,5 +23,8 @@ Template.home.events({
   },
   'click #create-room': function() {
     Meteor.call('create_room', Meteor.user().username);
+  },
+  'click #list-rooms': function() {
+    Router.go('room');
   }
 });

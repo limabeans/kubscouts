@@ -1,8 +1,9 @@
 <template name="room">
   <h1>Listing all public rooms</h1>
   <ul>
+    <li>convert this to a pretty table and make them linkable</li>
     {{#each list_public_rooms}}
-      <li><b>event:</b> {{event}} |||| <b>createdBy:</b>{{createdBy}}</li>
+    <li><b>id:</b> {{_id}}  ||||<b>event:</b> {{event}} |||| <b>createdBy:</b>{{createdBy}}</li>
     {{/each}}
   </ul>
 </template>
