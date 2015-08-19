@@ -15,4 +15,10 @@ if (Meteor.isServer) {
     return Times.find({});
   });
 
+  Times.allow({
+    insert: function(userId, user) {
+      return true;
+    }
+  });
+
 }

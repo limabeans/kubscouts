@@ -19,7 +19,7 @@ Times.attachSchema( new SimpleSchema({
   roomId: {
     type: String
   },
-  time: {
+  solveTime: {
     type: Number
   }
 }));
