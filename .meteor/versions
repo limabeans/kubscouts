@@ -80,6 +80,7 @@ underscore@1.0.3
 url@1.0.4
 useraccounts:bootstrap@1.12.2
 useraccounts:core@1.12.2
+useraccounts:iron-routing@1.12.2
 velocity:chokidar@0.12.6_1
 velocity:core@0.6.1
 velocity:html-reporter@0.5.3
